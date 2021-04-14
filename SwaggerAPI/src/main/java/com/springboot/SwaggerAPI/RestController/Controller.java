@@ -35,6 +35,11 @@ public class Controller {
 		itemService.despositQuantity(item_no, quantity);
 	}
 	
+	@PostMapping("/withdrawalquantity")
+	public void Withdrawal(int item_no, int quantity) {
+		itemService.withdrawalquantity(item_no, quantity);
+	}
+	
 	@GetMapping("/getListItems")
 	public List<Item> getList() {
 		return itemService.getAllItems();

@@ -40,5 +40,14 @@ public class ItemService {
 		item.setAmount(sum);
 		repository.save(item);
 	}
+	
+	public void withdrawalquantity(int id, int quantity) {
+		Item item = repository.findById(id);
+		int sub = item.getAmount() - quantity;
+		if(sub >= 0) {
+			item.setAmount(sub);
+			repository.save(item);
+		}
+	}
 
 }

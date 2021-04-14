@@ -57,6 +57,5 @@ public class Item {
 		return String.format(
 				"Item[item_no=%d, name=%s, quantiy=%d, inventory_code=%s]", item_no, name, amount, inventory_code);
 	}
-	
 
 }

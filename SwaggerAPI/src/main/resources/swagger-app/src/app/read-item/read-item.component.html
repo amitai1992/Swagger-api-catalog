@@ -1,1 +1,23 @@
-<p>read-item works!</p>
+<form #data="ngForm" (ngSubmit)="getItem(data.value)" ngNativeValidate>
+    <input [(ngModel)] = "data.id" type="number" name="id" placeholder="item number" required>
+    <button type="submit">get item</button>
+</form>
+
+<div *ngIf="flag != false">
+
+<table [(ngModel)]="item">
+    <tr>
+        <th class="tdCell">item number</th>
+        <th class="tdCell">amount</th>
+        <th class="tdCell">inventory code</th>
+        <th class="tdCell">name</th>
+        
+    </tr>
+    <tr>
+        <td  class="tdCell">{{item.item_no}}</td>
+        <td  class="tdCell">{{item.amount}}</td>
+        <td  class="tdCell">{{item.inventory_code}}</td>
+        <td  class="tdCell">{{item.name}}</td>
+    </tr>
+</table>
+</div>

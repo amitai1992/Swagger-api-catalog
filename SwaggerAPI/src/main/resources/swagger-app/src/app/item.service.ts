@@ -20,4 +20,12 @@ export class ItemService {
     return this.http.delete(`${this.url}deleteItem?item_no=` + item_no);
   }
 
+  getItem(id:number): Observable<any> {
+    return this.http.get(`${this.url}getItem?item_no=` + id);
+  }
+
+  desposit(id:number, quantity:number): Observable<any> {
+    return this.http.get(`${this.url}despositQuantity?item_no=${id}&quantity=${quantity}`);
+  }
+
 }

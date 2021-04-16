@@ -8,13 +8,15 @@ import { AppComponent } from './app.component';
 import { AddComponent } from './add/add.component';
 import { DeleteComponent } from './delete/delete.component';
 import { ReadItemComponent } from './read-item/read-item.component';
+import { UpdateItemComponent } from './update-item/update-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AddComponent,
     DeleteComponent,
-    ReadItemComponent
+    ReadItemComponent,
+    UpdateItemComponent
   ],
   imports: [
     BrowserModule,

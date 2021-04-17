@@ -1,5 +1,6 @@
-<form #data="ngForm" (ngSubmit)="deleteItem(data.value)" ngNativeValidate>
-    <input [(ngModel)] = "data.id" type="number" name="id" placeholder="item number" required>
-    <button type="submit">Delete item</button>
+<h1 class="my-headline">Delete Item</h1>
+<form class="my-form" #data="ngForm" (ngSubmit)="deleteItem(data.value)" ngNativeValidate>
+    <input class="my-input" [(ngModel)] = "data.id" type="number" name="id" placeholder="item number" required>
+    <button class="my-btn btn btn-danger" type="submit">Delete item</button>
 </form>
 

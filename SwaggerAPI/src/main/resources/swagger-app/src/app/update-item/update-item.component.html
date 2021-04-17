@@ -1,7 +1,8 @@
-<form #data="ngForm"  ngNativeValidate>
-    <input [(ngModel)] = "data.id" type="number" name="id" placeholder="item number" required>
-    <input [(ngModel)] = "data.quantity" type="number" name="quantity" placeholder="quantity" required>
-    <button type="submit" (click)="withdrawal(data.value)">withdrawal</button>
-    <button type="submit" (click)="desposit(data.value)">desposit</button>
+<h1 class="my-headline">Update Item</h1>
+<form class="my-form" #data="ngForm"  ngNativeValidate>
+    <input class="my-input" [(ngModel)] = "data.id" type="number" name="id" placeholder="item number" required>
+    <input class="my-input" [(ngModel)] = "data.quantity" type="number" name="quantity" placeholder="quantity" required>
+    <button class="my-btn btn btn-danger" type="submit" (click)="withdrawal(data.value)">withdrawal</button>
+    <button class="my-btn btn btn-success" type="submit" (click)="desposit(data.value)">desposit</button>
 </form>
 

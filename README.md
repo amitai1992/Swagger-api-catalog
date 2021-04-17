@@ -9,3 +9,8 @@ if you want to go to h2 database go to: http://localhost:8080/h2
 the password and username for the database: root, make sure to edit the JDBC url like the picture:
 
 ![Alt text](https://github.com/amitai1992/Swagger-api-catalog/blob/main/images/h2%20entry.png?raw=true "Title")
+
+if you want to expose the swagger go to http://localhost:8080/swagger-ui.html or click "go to swagger" at the app navbar brand at localhost:8080
+
+
+![Alt text](https://github.com/amitai1992/Swagger-api-catalog/blob/main/images/navbar.png?raw=true "Title")

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ItemService } from '../item.service';
 
 @Component({
   selector: 'app-update-item',
@@ -7,7 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UpdateItemComponent implements OnInit {
 
-  constructor() { }
+  constructor(private service: ItemService) { }
+
+  withdrawal(data) {
+    this.service.withdrawal(data.id, data.quantity).subscribe(res => {
+      alert(res.response);
+    });
+  }
+
+  desposit(data) {
+    this.service.desposit(data.id, data.quantity).subscribe(res => {
+      alert(res.response);
+    });
+  }
 
   ngOnInit(): void {
   }

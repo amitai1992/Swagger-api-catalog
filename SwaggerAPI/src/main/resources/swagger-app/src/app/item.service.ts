@@ -25,7 +25,12 @@ export class ItemService {
   }
 
   desposit(id:number, quantity:number): Observable<any> {
-    return this.http.get(`${this.url}despositQuantity?item_no=${id}&quantity=${quantity}`);
+    
+    return this.http.post(`${this.url}despositQuantity?quantity=${quantity}`, id);
+  }
+
+  withdrawal(id:number, quantity:number): Observable<any> {
+    return this.http.post(`${this.url}withdrawalquantity?quantity=${quantity}`, id);
   }
 
 }

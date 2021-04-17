@@ -1,7 +1,7 @@
 <form #data="ngForm"  ngNativeValidate>
     <input [(ngModel)] = "data.id" type="number" name="id" placeholder="item number" required>
-    <input [(ngModel)] = "data.inventory_code" type="number" name="inventory_code" placeholder="item number" required>
-    <button type="submit" (ngSubmit)="withdrawal(data.value)">withdrawal</button>
-    <button type="submit" (ngSubmit)="desposit(data.value)">desposit</button>
+    <input [(ngModel)] = "data.quantity" type="number" name="quantity" placeholder="quantity" required>
+    <button type="submit" (click)="withdrawal(data.value)">withdrawal</button>
+    <button type="submit" (click)="desposit(data.value)">desposit</button>
 </form>
 

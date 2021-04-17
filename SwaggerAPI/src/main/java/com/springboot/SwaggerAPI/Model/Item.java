@@ -8,20 +8,20 @@ import javax.persistence.Id;
 
 
 
-
+//Entity class
 @Entity
 public class Item {
 	@Id
-	private int item_no;
+	private int item_no; // primery key
 
 	@Column(unique = true)
-	private String name;
+	private String name; // unique
 
 	private int amount;
 
 	@Column(unique = true)
 
-	private int inventory_code;
+	private int inventory_code; //unique
 	
 	protected Item() {};
 

@@ -10,6 +10,7 @@ export class DeleteComponent implements OnInit {
 
   constructor(private service: ItemService) { }
 
+  // send delete request to the server on click 
   deleteItem(data) {
     this.service.deleteItem(data.id).subscribe(response => {
       alert(response.response);

@@ -16,9 +16,10 @@ export class ReadItemComponent implements OnInit {
     this.item = new Item(data);
   }
 
+  // get item details
   getItem(data) {
     this.service.getItem(data.item_no).subscribe(resItem => {
-      if (resItem != null) {
+      if (resItem != null) { // if the response item not null than this item = response
         this.item.set(resItem);
       }
       else {
@@ -26,7 +27,7 @@ export class ReadItemComponent implements OnInit {
       }
 
     });
-    this.flag = true;
+    this.flag = true; // add flag true to show the table details
   }
 
   ngOnInit(): void {

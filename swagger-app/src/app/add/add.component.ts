@@ -11,6 +11,7 @@ export class AddComponent implements OnInit {
 
   constructor(private service:ItemService) { }
 
+  //on click add item, send the add request to the server
   onSubmit(data) {
     let item = new Item(data);
     let res =  this.service.addItem(item).subscribe(respond =>{
@@ -18,10 +19,6 @@ export class AddComponent implements OnInit {
       return respond;
     });
    
-    
-   
-    
-    
   }
 
   ngOnInit(): void {

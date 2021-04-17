@@ -10,6 +10,10 @@ the password and username for the database: root, make sure to edit the JDBC url
 
 ![Alt text](https://github.com/amitai1992/Swagger-api-catalog/blob/main/images/h2%20entry.png?raw=true "Title")
 
+Note that the h2 run on file mode, if you want it on memory mode change it in the app properties. 
+
+![Alt text](https://github.com/amitai1992/Swagger-api-catalog/blob/main/images/h2table.png?raw=true "Title")
+
 if you want to expose the swagger go to http://localhost:8080/swagger-ui.html or click "go to swagger" at the app navbar brand at localhost:8080
 
 

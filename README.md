@@ -22,3 +22,7 @@ if you want to expose the swagger go to http://localhost:8080/swagger-ui.html or
 properties:
 
 ![Alt text](https://github.com/amitai1992/Swagger-api-catalog/blob/main/images/props.png?raw=true "Title")
+
+app homepage:
+
+![Alt text](https://github.com/amitai1992/Swagger-api-catalog/blob/main/images/add.png?raw=true "Title")

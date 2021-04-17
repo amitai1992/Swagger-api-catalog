@@ -18,7 +18,13 @@ export class ReadItemComponent implements OnInit {
 
   getItem(data) {
     this.service.getItem(data.item_no).subscribe(resItem => {
-      this.item.set(resItem);
+      if (resItem != null) {
+        this.item.set(resItem);
+      }
+      else {
+        alert("item not exist");
+      }
+
     });
     this.flag = true;
   }

@@ -9,7 +9,8 @@ const routes: Routes = [
   {path:'add', component:AddComponent},
   {path:'delete', component:DeleteComponent},
   {path:'read', component:ReadItemComponent},
-  {path:'update', component:UpdateItemComponent}
+  {path:'update', component:UpdateItemComponent},
+  {path: '', redirectTo: 'add', pathMatch: 'full'}
 ];
 
 @NgModule({

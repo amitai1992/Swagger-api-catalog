@@ -12,4 +12,12 @@ export class Item {
         this.name = data.name;
     }
 
+    set(data: {amount: number, inventory_code: number, item_no:number, name:string}) {
+        this.amount = data.amount;
+        this.inventory_code = data.inventory_code;
+        this.item_no = data.item_no;
+        this.name = data.name;
+    }
+    
+
 }

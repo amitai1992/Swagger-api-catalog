@@ -9,15 +9,16 @@ import { Item } from '../ItemClass/Item';
 })
 export class ReadItemComponent implements OnInit {
   flag: boolean;
-  item: any;
+  item: Item;
   constructor(private service: ItemService) {
     this.flag = false;
-    this.item = undefined;
+    let data = { amount: -1, inventory_code: -1, item_no: -1, name: "empty" };
+    this.item = new Item(data);
   }
 
-  async getItem(data) {
-    await this.service.getItem(data.id).subscribe(resItem => {
-      this.item = new Item(resItem);
+  getItem(data) {
+    this.service.getItem(data.item_no).subscribe(resItem => {
+      this.item.set(resItem);
     });
     this.flag = true;
   }

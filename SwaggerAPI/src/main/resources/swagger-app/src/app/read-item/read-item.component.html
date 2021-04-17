@@ -1,24 +1,25 @@
 <h1 class="my-headline">Read Item</h1>
 <form class="my-form" #data="ngForm" (ngSubmit)="getItem(data.value)" ngNativeValidate>
-    <input class="my-input" [(ngModel)] = "data.id" type="number" name="id" placeholder="item number" required>
+    <input class="my-input" [(ngModel)]="data.item_no" type="number" name="item_no" ngDefaultControl
+        placeholder="item number" required>
     <button class="my-btn btn btn-success" type="submit">get item</button>
 </form>
 
 <div *ngIf="flag != false">
 
-<table class="table table-bordered table-sm my-table" [(ngModel)]="item">
-    <tr>
-        <th scope="col">item number</th>
-        <th scope="col">amount</th>
-        <th scope="col">inventory code</th>
-        <th scope="col">name</th>
-        
-    </tr>
-    <tr>
-        <td>{{item.item_no}}</td>
-        <td>{{item.amount}}</td>
-        <td>{{item.inventory_code}}</td>
-        <td>{{item.name}}</td>
-    </tr>
-</table>
+    <table class="table table-bordered table-sm my-table" [(ngModel)]="item" ngDefaultControl>
+        <tr>
+            <th scope="col">item number</th>
+            <th scope="col">amount</th>
+            <th scope="col">inventory code</th>
+            <th scope="col">name</th>
+
+        </tr>
+        <tr>
+            <td>{{item.item_no}}</td>
+            <td>{{item.amount}}</td>
+            <td>{{item.inventory_code}}</td>
+            <td>{{item.name}}</td>
+        </tr>
+    </table>
 </div>

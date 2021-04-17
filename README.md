@@ -18,3 +18,7 @@ if you want to expose the swagger go to http://localhost:8080/swagger-ui.html or
 
 
 ![Alt text](https://github.com/amitai1992/Swagger-api-catalog/blob/main/images/navbar.png?raw=true "Title")
+
+properties:
+
+![Alt text](https://github.com/amitai1992/Swagger-api-catalog/blob/main/images/props.png?raw=true "Title")
